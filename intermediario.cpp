@@ -26,5 +26,5 @@ peerInfo.encrypt = false;
 esp_now_add_peer(&peerInfo); 
 } 
 void loop() { 
-// nada aqui 
+    
 }
