@@ -2,7 +2,7 @@
 #include <esp_now.h> 
 #include <ArduinoJson.h> 
 void onReceive(const esp_now_recv_info_t *info, const uint8_t *data, int len) { 
-StaticJsonDocument<200> doc; 
+StaticJsonDocument<128> doc; 
 DeserializationError error = deserializeJson(doc, data, len); 
 if (!error) { 
 Serial.println("=== Dados recebidos do intermediário ==="); 
